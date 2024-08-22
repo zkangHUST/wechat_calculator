@@ -1,0 +1,12 @@
+<!--pages/home/home.wxml-->
+<view class="container">
+  <view class="result-wrap">
+    <input placeholder="0" value="{{curValue}}"></input>
+    <view class="result">{{curResult}}
+    </view>
+  </view>
+  <view class="buttons">
+    <button bind:tap="onClick" data-key="{{item.value}}" class="{{item.className}}" wx:for="{{buttons}}">{{item.value}}
+    </button>
+  </view>
+</view>
